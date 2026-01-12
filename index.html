@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeEngine Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cupertino"> <canvas id="particle-canvas"></canvas>
+
+    <div class="app-container">
+        <header>
+            <div class="brand">TypeEngine <span>Pro</span></div>
+            <div class="theme-switch-wrapper">
+                <span class="label">Cupertino</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="label">Redmond</span>
+            </div>
+        </header>
+
+        <section class="hud">
+            <div class="stat-box">
+                <span class="stat-label">WPM</span>
+                <span class="stat-value" id="wpm-display">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Accuracy</span>
+                <span class="stat-value" id="acc-display">100%</span>
+            </div>
+            <div class="flow-container">
+                <div class="flow-label">FLOW STREAK</div>
+                <div class="flow-bar-bg">
+                    <div id="flow-bar" class="flow-bar-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <main class="typing-arena" id="arena">
+            <div id="caret" class="caret"></div>
+            <div id="text-display" class="text-display"></div>
+        </main>
+
+        <footer class="keyboard-wrapper">
+            <div id="keyboard" class="keyboard">
+                </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
